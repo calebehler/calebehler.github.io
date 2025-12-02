@@ -1,0 +1,368 @@
+main{
+    margin-bottom: 50px;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin: 0;
+    background-image: url(images/space.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+/*Added background image with center, cover, and no repeat*/
+/*Center-aligned the header text*/
+header{
+    
+    background-image: url(images/The_Solar_System.png); /* REQUIRED */
+    background-repeat: no-repeat; /* REQUIRED */
+    background-position:100% 47%; /* REQUIRED */
+    background-size:cover; /* REQUIRED */
+    opacity: 0.9;
+    text-align: center; /* REQUIRED */
+    position:sticky; /* REQUIRED */
+    top: 0;
+    width: 100%;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    z-index: 1;
+    
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 100px;
+    margin:0;
+    padding: 0;
+    text-shadow:
+        1px 1px 2px rgb(212, 0, 255),
+        0 0 1em blue,
+        0 0 0.2em rgb(111, 0, 255);
+    
+    
+}
+.top-product-row{
+    display: inline;
+    min-width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.bottom-product-row{
+    display: inline;
+    min-width: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/*Adjusted width, padding, border and margin*/
+/*Added box shadow with blur and offset*/
+/*Added background colour*/
+/*Prevented overflow*/
+.product{
+    display: inline grid;
+    width: 300px; /* REQUIRED */
+    padding: 20px; /* REQUIRED */
+    border: 2px solid black; /* REQUIRED */
+    margin: 10px; /* REQUIRED */
+    background-color: rgba(66, 66, 66, 0.521); /* REQUIRED */
+    color: white;
+    box-shadow:2px 4px 4px rgba(0, 0, 0, 0.3); /* REQUIRED */
+    overflow:hidden; /* REQUIRED */
+    min-height: 600px;
+    
+}
+#mercury:hover{
+    box-shadow: 0px 0px 6px 4px rgba(247, 132, 0, 0.781);
+    border-color: rgba(247, 132, 0, 0.781);
+}
+
+#venus:hover{
+    box-shadow: 0px 0px 6px 4px rgba(255, 129, 217, 0.781);
+    border-color: rgba(255, 129, 217, 0.781);
+}
+
+#earth:hover{
+    box-shadow: 0px 0px 6px 4px rgba(60, 255, 0, 0.781);
+    border-color: rgba(60, 255, 0, 0.781);
+}
+
+#mars:hover{
+    box-shadow: 0px 0px 6px 4px rgba(255, 0, 0, 0.781);
+    border-color: rgba(255, 0, 0, 0.781);
+}
+
+#jupiter:hover{
+    box-shadow: 0px 0px 6px 4px rgba(255, 196, 0, 0.781);
+    border-color: rgba(255, 196, 0, 0.781);
+}
+
+#saturn:hover{
+    box-shadow: 0px 0px 6px 4px rgba(119, 0, 255, 0.781);
+    border-color: rgba(119, 0, 255, 0.781);
+}
+
+#uranus:hover{
+    box-shadow: 0px 0px 6px 4px rgba(0, 60, 255, 0.781); 
+    border-color: rgba(0, 60, 255, 0.781);     
+}
+
+#neptune:hover{
+    box-shadow: 0px 0px 6px 4px rgba(0, 255, 200, 0.781);  
+    border-color: rgba(0, 255, 200, 0.781);  
+}
+
+.product-image{
+    position: relative; /* REQUIRED */
+}
+.prod-img{
+    min-width: 300px;
+    max-width: 300px;
+    min-height: 300px;
+    max-height: 300px;
+    
+}
+
+.product>h2{
+    font-size: 32px;
+    
+    font-family: Verdana, Tahoma, sans-serif;
+    text-align: center;
+    text-shadow:
+        1px 1px 3px rgb(0, 0, 0),
+        0 0 0.2em rgb(255, 255, 255),
+        0 0 1em rgb(255, 255, 255);
+}
+.product>p{
+    font-size: larger;
+    margin: 3px;
+    min-height: 115px;
+}
+/*Added border to product-specs class and to table rows and headers*/
+.product-specs{
+    border: 1px solid white; /* REQUIRED */
+    width: 100%;
+    font-size: large;
+}
+tr, th{
+    border: 1px solid white; /* REQUIRED */  
+}
+/*alternating table row colours*/
+tr:nth-child(even){
+    background-color: rgb(85, 85, 85); /* REQUIRED */
+}
+tr:nth-child(odd){
+    background-color: rgb(0, 0, 0); /* REQUIRED */
+}
+/* REQUIRED change row colours on hover */
+#mercury>table>tbody>tr:hover{
+    background-color: rgba(247, 132, 0, 0.781);
+}
+
+#venus>table>tbody>tr:hover{
+    background-color: rgba(255, 129, 217, 0.781);
+}
+
+#earth>table>tbody>tr:hover{
+    background-color: rgba(60, 255, 0, 0.781);
+}
+
+#mars>table>tbody>tr:hover{
+    background-color: rgba(255, 0, 0, 0.781);
+}
+
+#jupiter>table>tbody>tr:hover{
+    background-color: rgba(255, 196, 0, 0.781);
+}
+
+#saturn>table>tbody>tr:hover{
+    background-color: rgba(119, 0, 255, 0.781);
+    color: white;
+}
+
+#uranus>table>tbody>tr:hover{
+    background-color: rgba(0, 60, 255, 0.781);
+    color: white;
+}
+
+#neptune>table>tbody>tr:hover{
+    background-color: rgba(0, 255, 200, 0.781);
+}
+
+/*change colours of planet name*/
+#mercury>h2{
+    color: rgba(247, 132, 0, 0.781);
+}
+
+#venus>h2{
+    color: rgba(255, 129, 217, 0.781);
+}
+
+#earth>h2{
+    color: rgba(60, 255, 0, 0.781);
+}
+
+#mars>h2{
+    color: rgba(255, 0, 0, 0.781);
+}
+
+#jupiter>h2{
+    color: rgba(255, 196, 0, 0.781);
+}
+
+#saturn>h2{
+    color: rgba(119, 0, 255, 0.781);
+}
+
+#uranus>h2{
+    color: rgba(0, 60, 255, 0.781);
+}
+
+#neptune>h2{
+    color: rgba(0, 255, 200, 0.781);
+}
+
+/*Positioned product badge to top right of .product-image container
+Added background colour + padding*/
+/* REQUIRED background colour specified in individual badge ids*/
+.badge{
+    position: absolute; /* REQUIRED */
+    top: 0; /* REQUIRED */
+    right: 0; /* REQUIRED */
+    color: white;
+    padding:2px; /* REQUIRED */
+    font-size: 18px;
+    font-style: italic;
+    border-radius: 2px;  
+}
+
+#mercury>.product-image>.badge{
+    background-color: rgba(247, 132, 0, 0.781); /*same as .product box shadow colours */
+    border: 1px solid rgba(255, 255, 255, 0.493);
+}
+
+#venus>.product-image>.badge{
+    background-color: rgba(255, 129, 217, 0.781); /*same as .product box shadow colours */
+    border: 1px solid rgba(255, 255, 255, 0.493);
+}
+
+#earth>.product-image>.badge{
+    background-color: rgba(60, 255, 0, 0.781); /*same as .product box shadow colours */
+    border: 1px solid rgba(255, 255, 255, 0.493);
+}
+
+#mars>.product-image>.badge{
+    background-color: rgba(255, 0, 0, 0.781); /*same as .product box shadow colours */
+    border: 1px solid rgba(255, 255, 255, 0.493);
+}
+
+#jupiter>.product-image>.badge{
+    background-color: rgba(255, 196, 0, 0.781); /*same as .product box shadow colours */
+    border: 1px solid rgba(255, 255, 255, 0.493);
+}
+
+#saturn>.product-image>.badge{
+    background-color: rgba(119, 0, 255, 0.781); /*same as .product box shadow colours */
+    border: 1px solid rgba(255, 255, 255, 0.493);
+}
+
+#uranus>.product-image>.badge{
+    background-color: rgba(0, 60, 255, 0.781);  /*same as .product box shadow colours */
+    border: 1px solid rgba(255, 255, 255, 0.493);
+}
+
+#neptune>.product-image>.badge{
+    background-color: rgba(0, 255, 200, 0.781);   /*same as .product box shadow colours */
+    border: 1px solid rgba(255, 255, 255, 0.493);
+}   
+
+/*Centered the contact form within the div using flex*/
+.contact-form{
+    display: flex; /* REQUIRED */
+    align-items: center; /* REQUIRED */
+    justify-content: center; /* REQUIRED */
+    color: white;
+    margin-top: 10px;
+}
+form{
+    background-color: rgba(0, 0, 0, 0.418);
+    padding: 5px;
+    margin-top: 0;
+    padding-top: 0;
+    border: 2px solid white;
+}
+
+/*REQUIRED used a fieldset to group inputs*/
+form>fieldset{
+    border: none;
+}
+/*made legend bold + added bottom border*/
+form>fieldset>legend{
+    font-size: 30px;
+    color:rgb(255, 255, 255);
+    font-weight: bolder; /* REQUIRED */
+    border-bottom: 2px solid white; /* REQUIRED */
+    width: 97%;
+    text-align: center;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+form>fieldset>label{
+    font-size: large; /* REQUIRED */
+    font-weight: bold; /* REQUIRED */
+    padding: 5px; /* REQUIRED */
+}
+form>fieldset>input{
+    font-size: large;
+    height: 30px;
+    background-color: rgba(188, 116, 255, 0.123);
+    border-color: white;
+    color: white;
+}
+
+/*added background color, padding, and text color to the button*/
+button{
+    background-color: rgba(101, 22, 175, 0.678); /* REQUIRED */
+    color: white; /* REQUIRED */
+    padding: 10px 20px 10px 20px; /* REQUIRED */
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 0%;
+    cursor: pointer;
+}
+button:hover{
+    background-color: blue;
+    color: white;
+    box-shadow: 0px 0px 3px rgb(212, 0, 255),
+        0 0 1em blue,
+        0 0 0.2em rgb(111, 0, 255);
+}
+/*Fixed the footer at the bottom of the page*/
+footer{
+    position: fixed; /* REQUIRED */
+    bottom:0px;
+    width:100%;
+    text-align: center;
+    border: 2px solid black;
+    margin-top: 50px;
+    background-color: black;
+    color: white;
+}
+
+
+

@@ -1,0 +1,200 @@
+<!--
+WEBD1000 - Assignment 8
+Author: Caleb Ehler
+November 7th, 2025
+
+Image sources:
+https://commons.wikimedia.org/wiki/File:1920x1200-space-free-kd3592201.jpg
+https://commons.wikimedia.org/wiki/File:ISS_March_2009.jpg
+https://commons.wikimedia.org/wiki/File:Jupiter_accurate_colour.png
+https://commons.wikimedia.org/wiki/File:Mercury_in_color_-_Prockter07_centered.jpg
+https://commons.wikimedia.org/wiki/File:PIA23791-Venus-RealAndEnhancedContrastViews-20200608_(cropped).jpg
+https://commons.wikimedia.org/wiki/File:The_Earth_seen_from_Apollo_17.jpg
+https://commons.wikimedia.org/wiki/File:OSIRIS_Mars_true_color.jpg
+https://commons.wikimedia.org/wiki/File:HST_Optical_Image_of_Saturn_(2004-saturn-more-2).jpg
+https://commons.wikimedia.org/wiki/File:Uranus2.jpg
+https://commons.wikimedia.org/wiki/File:Reprocessed_Neptune.png
+https://commons.wikimedia.org/wiki/File:The_Solar_System.png
+
+Planet facts and statistics taken from NASA: https://science.nasa.gov/solar-system/planets/
+
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Solar System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Our Solar System</h1>
+    </header>
+
+    <main>
+        <!-- Structure product cards in 2 rows of 4-->
+        <div id ="top-product-row">
+
+            <div class="product" id="mercury">
+                <div class="product-image">
+                    <img src="images/mercury.jpg" class="prod-img">
+                    <span class="badge">The Winged Messenger</span>
+                </div>
+                <h2>Mercury</h2>
+                <p>Mercury is the fastest planet in our solar system, completing a rotation around the Sun every 88 Earth days.</p>
+            
+                <table class="product-specs">
+                    <tr><th>Feature</th><th>Details</th></tr>
+                    <tr><td>Distance from Sun</td><td>0.4 AU</td></tr>
+                    <tr><td>Radius</td><td>2440 km</td></tr>
+                    <tr><td>Orbit (in Earth days)</td><td>88 days</td></tr>
+                </table>
+            </div>
+
+
+            <div class="product" id="venus">
+                <div class="product-image">
+                    <img src="images/venus.jpg" class="prod-img">
+                    <span class="badge">The Bringer of Peace</span>
+                </div>
+                <h2>Venus</h2>
+                <p>Venus is the hottest planet in our solar system, with surface temperatures hot enough to melt lead. It is sometimes called Earth's twin as it's our closest neighbour.</p>
+            
+                <table class="product-specs">
+                    <tr><th>Feature</th><th>Details</th></tr>
+                    <tr><td>Distance from Sun</td><td>0.72 AU</td></tr>
+                    <tr><td>Radius</td><td>6051 km</td></tr>
+                    <tr><td>Orbit (in Earth days)</td><td>224 days</td></tr>
+                </table>
+            </div>
+
+
+            <div class="product" id="earth">
+                <div class="product-image">
+                    <img src="images/earth.jpg" class="prod-img">
+                    <span class="badge">The Mother</span>
+                </div>
+                <h2>Earth</h2>
+                <p>Our Moon is likely the result of a collision billions of years ago, when a planet-sized chunk of rock smashed into it. The resulting chunks clumped together and formed our Moon.</p>
+            
+                <table class="product-specs">
+                    <tr><th>Feature</th><th>Details</th></tr>
+                    <tr><td>Distance from Sun</td><td>1.0 AU</td></tr>
+                    <tr><td>Radius</td><td>6378 km</td></tr>
+                    <tr><td>Orbit (in Earth days)</td><td>365 days</td></tr>
+                </table>
+            </div>
+
+
+            <div class="product" id="mars">
+                <div class="product-image">
+                    <img src="images/mars.jpg" class="prod-img">
+                    <span class="badge">The Bringer of War</span>
+                </div>
+                <h2>Mars</h2>
+                <p>Mars is home to the largest volcano in the solar system, Olympus Mons, which three times taller than Mount Everest.</p>
+            
+                <table class="product-specs">
+                    <tr><th>Feature</th><th>Details</th></tr>
+                    <tr><td>Distance from Sun</td><td>1.5 AU</td></tr>
+                    <tr><td>Radius</td><td>3390 km</td></tr>
+                    <tr><td>Orbit (in Earth days)</td><td>687 days</td></tr>
+                </table>
+            </div>
+        
+
+        </div>
+        <div id="bottom-product-row">
+
+            <div class="product" id="jupiter">
+                <div class="product-image">
+                    <img src="images/jupiter.png" class="prod-img">
+                    <span class="badge">The Bringer of Jollity</span>
+                </div>
+                <h2>Jupiter</h2>
+                <p>Jupiter is not only the largest planet in our solar system, it's also the oldest. It formed from the dust and gases left over from the Sun's formation 4.6 billion years ago.</p>
+            
+                <table class="product-specs">
+                    <tr><th>Feature</th><th>Details</th></tr>
+                    <tr><td>Distance from Sun</td><td>5.2 AU</td></tr>
+                    <tr><td>Radius</td><td>69911 km</td></tr>
+                    <tr><td>Orbit (in Earth days)</td><td>4333 days</td></tr>
+                </table>
+            </div>
+
+
+            <div class="product" id="saturn">
+                <div class="product-image">
+                    <img src="images/saturn.jpg" class="prod-img">
+                    <span class="badge">The Bringer of Old Age</span>
+                </div>
+                <h2>Saturn</h2>
+                <p>In addition to its stunning series of planetary rings, Saturn is also orbited by over 250 moons, such as Titan, Enceladus, Hyperion, and Phoebe.</p>
+            
+                <table class="product-specs">
+                    <tr><th>Feature</th><th>Details</th></tr>
+                    <tr><td>Distance from Sun</td><td>9.5 AU</td></tr>
+                    <tr><td>Radius</td><td>58232 km</td></tr>
+                    <tr><td>Orbit (in Earth days)</td><td>10756 days</td></tr>
+                </table>
+            </div>
+
+
+            <div class="product" id="uranus">
+                <div class="product-image">
+                    <img src="images/uranus.jpg" class="prod-img">
+                    <span class="badge">The Magician</span>
+                </div>
+                <h2>Uranus</h2>
+                <p>Uranus rotates at a nearly 90-degree angle from the plane of its orbit. This unique tilt makes Uranus appear to spin sideways, orbiting the Sun like a rolling ball.</p>
+            
+                <table class="product-specs">
+                    <tr><th>Feature</th><th>Details</th></tr>
+                    <tr><td>Distance from Sun</td><td>19 AU</td></tr>
+                    <tr><td>Radius</td><td>25362 km</td></tr>
+                    <tr><td>Orbit (in Earth days)</td><td>30687 days</td></tr>
+                </table>
+            </div>
+
+
+            <div class="product" id="neptune">
+                <div class="product-image">
+                    <img src="images/neptune.png" class="prod-img">
+                    <span class="badge">The Mystic</span>
+                </div>
+                <h2>Neptune</h2>
+                <p>Neptune has the slowest orbit of all the planets, completing a rotation only once every 165 years.</p>
+            
+                <table class="product-specs">
+                    <tr><th>Feature</th><th>Details</th></tr>
+                    <tr><td>Distance from Sun</td><td>30 AU</td></tr>
+                    <tr><td>Radius</td><td>24622 km</td></tr>
+                    <tr><td>Orbit (in Earth days)</td><td>60190 days</td></tr>
+                </table>
+            </div>
+        
+        </div>
+
+        <div class="contact-form">
+            <form>
+                <fieldset>
+                    <legend>Contact Us</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                 <span style='word-wrap: break-word;'><button type="submit">Submit</button></span>
+                </fieldset>
+            </form>
+        </div>
+    </main>
+    
+    <footer>
+        <p>© 2025 Caleb Ehler</p>
+    </footer>
+
+</body>
+</html>
